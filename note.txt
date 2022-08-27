@@ -1,0 +1,101 @@
+register form ထည့်တာ 
+register data ထည့်
+
+blogger file create command
+==>express --view=ejs <pj name>
+
+
+
+
+note (23.7.2022)
+npm run dev (server run.......) dev နေရာမှာ run ချင် တဲ့ name ထည့်
+db.users.drop()  users နေရာ မှာ ဖျက်ချင် တဲ့ collections name ထည့်
+npm i bcryptjs (password encode) password ကို encode လုပ်တာ
+User.js ထဲမှာ password encode လုပ်တဲ့ code ရေးတယ်
+db delete => 1. use dbname
+             2. db.dropDatabase()
+
+show dbs
+show collections
+db.collectionsName.find({})
+
+login
+=======
+
+views => login.ejs
+
+
+
+
+npm i express-session
+
+express-session သုံးဖို့ က jquery.js လို တယ်
+jquery.jsကို public ထဲက javascrips ထည့်
+
+app.js
+index.js
+index.ejs
+
+
+
+post created
+=============
+
+user.js > file connect
+get ==> url
+render ==> file path
+
+user နဲ့ ပက်သက်တာ user ထဲမှာ ထည့်
+
+
+post add form..
+===============
+
+accept က image only ဘဲရွေးအောင် ထည့်တာ။
+
+
+npm i multer (image data)
+
+
+views => partials => ဘုံတူတာ ထည့်တာ
+index.js ထဲမှာ populate လုပ်တာ က name ကို ပြန်ယူတာ
+public accept ရှိတာ အတွက်ဆို ယေဘုယျ index.jsထဲမှ ရေးတယ်
+ejs file ထဲမှာ data ထဲဖို့ ဆို ejs systnax
+
+
+select => လိုချင်တာ ရွေး ယူတာ
+populate => ရှိတဲ့ ဟာထဲက ရွေးယူ ပြီးတော့ မှ လိုချင်တဲ့ name ပြန်ထုတ်
+exec => အပေါ်ကဟာ ပြီး ရင် ဆက်လုပ်
+ajax => use json
+
+
+tailwindcss setup
+
+==>npm install -D tailwindcss
+install တင်
+package.json ထဲမှာ tailwindcss ဝင်သွားမယ်
+
+
+==>npx tailwindcss init
+tailwind.config.js ပေါ်လာမယ်
+
+tailwind.config.js ထဲမှာ "./src/**/*.{html,js}" ထည့်
+src မှာ views ပြောင်း ,ejs ထည့်
+
+public==> stylesheets==> input.css ==>
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ထည့်
+
+package.json ==>
+    "tailwind" : "npx tailwindcss -i ./public/stylesheets/input.css -o ./public/stylesheets/style.css --watch"
+ထည့်
+
+==> npm run tailwind ကို run ထား
+==> server run
+
+
+cookie ==> broswer မှာ data  မှတ်ထားတာ 
