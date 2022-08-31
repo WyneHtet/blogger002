@@ -107,7 +107,6 @@ router.get("/mypostlist", auth, function (req, res) {
           posts: rtn,
         });
       }
-      res.render("user/postlist", { posts: rtn });
     });
 });
 
